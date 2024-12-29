@@ -92,7 +92,7 @@ img {
 #projekter .link-animation::before {
   background-image: url("svg/04.svg");
   background-size: 150px 300px;
-  left: 0%;
+  left: -1%;
   background-repeat: no-repeat;
   padding-left: 40px;
 }
@@ -100,9 +100,10 @@ img {
 #projekter .link-content::before {
   background-image: url("svg/05.svg");
   background-size: 340px 300px;
-  left: -2%;
+  left: -3%;
   background-repeat: no-repeat;
   padding-left: 40px;
+  height: calc(100% + 38px);
 }
 
 /* underoverskrift */
@@ -115,7 +116,6 @@ h4 {
 }
 /* mine projekter */
 h6 {
-  padding-bottom: 30px;
   font-size: 3.5cqw;
   color: black;
   font-family: "Playfair Display", serif;
@@ -216,8 +216,6 @@ h6 {
     font-family: "Playfair Display", serif;
     font-weight: 100;
     text-align: start;
-    padding-left: 30px;
-    padding-top: 100px;
   }
 
   /* To forskellige svg  */

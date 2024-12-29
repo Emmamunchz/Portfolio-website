@@ -123,11 +123,10 @@ body {
 header {
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
   align-items: center;
   z-index: 400;
   background-color: none;
@@ -145,10 +144,10 @@ header {
   border: none;
   color: black;
   cursor: pointer;
-  font-size: 5cqw;
+  font-size: 4.5cqw;
   font-family: "Playfair Display", serif;
   position: absolute;
-  left: 3%;
+  left: 0%;
   top: 70%;
   background-color: #f3f3f300;
 }
@@ -176,10 +175,10 @@ header {
   right: 0px;
   overflow: hidden;
   font-family: "Playfair Display", serif;
-  display: none;
   width: 100vw;
   height: 100vw;
   z-index: 999;
+  display: none;
 }
 
 #dropdownMenu2 ul {
@@ -256,7 +255,7 @@ p {
 
 /* indhold på index */
 #indhold1 {
-  padding: 70px;
+  padding: 80px;
   padding-bottom: 0px;
 }
 
@@ -368,11 +367,11 @@ p {
     border: none;
     color: black;
     cursor: pointer;
-    font-size: 2cqw;
+    font-size: 1.8cqw;
     font-family: "Playfair Display", serif;
     position: absolute;
-    left: 1.5%;
     top: 54%;
+    left: 0.5%;
   }
   #lukButton2 {
     background: none;
@@ -421,7 +420,7 @@ p {
     display: block;
     color: black;
     font-size: 5cqw;
-    font-weight: bolder;
+    font-weight: 500;
     font-family: "Playfair Display", serif;
   }
 
@@ -533,14 +532,11 @@ p {
   }
   /* sektion under forsiden, lottiefile */
   .hunde {
-    top: 90%;
-    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     position: relative;
-    z-index: 0;
-    width: 1000px;
-    height: 500px;
+    width: 1050px;
+    height: 600px;
     left: 50%;
     transform: translateX(-50%);
     /* transform sikre at det er lige i midten */
@@ -572,7 +568,7 @@ p {
     text-decoration: none;
     color: #000000;
     font-family: "Playfair Display", serif;
-    font-size: 2cqw;
+    font-size: 1.5cqw;
     font-weight: bold;
   }
 }
