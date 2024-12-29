@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* kasser ved cvét */
+
+.tidslinje-mobil {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  opacity: 50%;
+}
+
+.tidslinje-desk {
+  display: none;
+}
+/* Container for boksene */
+/* .boxes {
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Styling */
+/* .box {
+  width: 90%;
+  margin: 5px auto;
+  border: 1px solid #343434;
+  padding: 15px;
+  text-align: center;
+  background-color: #f3f3f3; 
+  font-family: "Roboto", serif;
+  font-size: 3.5cqw;
+  border-radius: 15px;
+}  */
+
+/* projekter menuen */
+/* Generelt styling */
+
+#projekter {
+  text-align: left;
+  margin: 60px 10px;
+}
+
+#projekter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#projekter li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 40px 40px;
+  position: relative;
+}
+
+#projekter a {
+  font-family: "Bodoni Moda", serif;
+  font-size: 6cqw;
+  font-weight: 800;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+  position: relative; /* Gør det muligt at tilføje et ::before pseudo-element */
+}
+
+#projekter a::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* Flyt SVG’en over paddingen */
+  left: -10px; /* Juster venstre placering */
+  width: calc(100% + 20px); /* Udvid bredde, så den overlapper */
+  height: calc(100% + 40px); /* Udvid højde, så den overlapper */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+#projekter a:hover::before {
+  opacity: 0;
+}
+
+#projekter .link-web::before {
+  background-image: url("svg/02.svg");
+  background-size: 320px 300px; /* Tilpas størrelse */
+  left: 0%;
+  background-repeat: no-repeat;
+  padding-left: 40px; /* Giver plads til SVG før teksten */
+}
+
+#projekter .link-ux::before {
+  background-image: url("svg/03.svg");
+  background-size: 320px 300px; /* Tilpas størrelse */
+  left: -3%;
+  background-repeat: no-repeat;
+  padding-left: 40px; /* Giver plads til SVG før teksten */
+}
+
+#projekter .link-animation::before {
+  background-image: url("svg/04.svg");
+  background-size: 150px 300px; /* Tilpas størrelse */
+  left: 0%;
+  background-repeat: no-repeat;
+  padding-left: 40px; /* Giver plads til SVG før teksten */
+}
+
+#projekter .link-content::before {
+  background-image: url("svg/05.svg");
+  background-size: 340px 300px; /* Tilpas størrelse */
+  left: -2%;
+  background-repeat: no-repeat;
+  padding-left: 40px; /* Giver plads til SVG før teksten */
+}
+
+/* mine projekter titel */
+h6 {
+  padding-bottom: 30px;
+  font-size: 3.5cqw;
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+/*over 600px bredde*/
+@media (min-width: 800px) {
+  #projekter {
+    text-align: center;
+    margin: 60px 10px;
+  }
+
+  #projekter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #projekter li {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 60px 60px;
+    position: relative;
+  }
+
+  #projekter a {
+    font-family: "Bodoni Moda", serif;
+    font-size: 4.5cqw;
+    font-weight: 800;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    position: relative;
+  }
+
+  #projekter a::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 50px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+
+  #projekter a:hover::before {
+    opacity: 0;
+  }
+
+  #projekter .link-web::before {
+    background-image: url("svg/02.svg");
+
+    background-size: 800px 700px;
+    left: 5%;
+    background-repeat: no-repeat;
+  }
+
+  #projekter .link-ux::before {
+    background-image: url("svg/03.svg");
+
+    background-size: 800px 700px;
+    left: 2%;
+    background-repeat: no-repeat;
+  }
+
+  #projekter .link-animation::before {
+    background-image: url("svg/04.svg");
+
+    background-size: 400px 700px;
+    left: 8%;
+    background-repeat: no-repeat;
+  }
+
+  #projekter .link-content::before {
+    background-image: url("svg/05.svg");
+    height: calc(100% + 40px);
+    background-size: 900px 700px;
+    left: 3%;
+    background-repeat: no-repeat;
+  }
+
+  /* mine projekter titel */
+  h4 {
+    font-size: 2cqw;
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+  }
+  /* underoverskrifter */
+  h6 {
+    font-size: 2cqw;
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    text-align: start;
+    padding-left: 30px;
+    padding-top: 100px;
+  }
+
+  /* To forskellige svg  */
+  .tidslinje-mobil {
+    display: none;
+  }
+
+  .tidslinje-desk {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 10px;
+    opacity: 50%;
+  }
+}

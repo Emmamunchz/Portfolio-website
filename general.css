@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodoni-moda {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.figma {
+  width: 370px;
+  height: 200px;
+}
+/* forside */
+.hero {
+  height: 100vh;
+  background-image: url("fotografier/hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f3f3f3;
+  text-align: center;
+  position: relative;
+  z-index: 500;
+}
+
+.hunde {
+  height: 30vh;
+  top: 80px;
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+#menuButton {
+  background: none;
+  border: none;
+  color: #f3f3f3;
+  cursor: pointer;
+  font-size: 5cqw;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  bottom: 10%;
+}
+
+#dropdownMenu {
+  position: absolute;
+
+  top: 30%;
+  right: 0px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px 20px;
+  font-family: "Playfair Display", serif;
+  display: none; /* Starter skjult */
+  width: 100vw;
+  height: 50vh;
+  align-items: end;
+  z-index: 1000;
+  background-color: none;
+}
+#dropdownMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#dropdownMenu ul li a {
+  display: block;
+  padding: 10px;
+  color: #f3f3f3a0;
+  text-decoration: none;
+  font-size: 5cqw;
+  font-weight: 100;
+  font-family: "Playfair Display", serif;
+}
+
+/* bagrund */
+/* jeg har lavet en cirkel gradient, for at tilføje baggrunden lidt støj, og for at give det her moderne minimalistiske look. Det er en cirkel for at det ser mest naturligt ud, og så høj oppazity på farverne for at det bare lige kan nænnes */
+body {
+  background-color: #f3f3f3; /* Lys grå nuance */
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 10%, rgba(0, 0, 0, 0.01) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  align-items: center;
+  z-index: 400;
+  background-color: none;
+}
+.logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 5cqw;
+  color: black;
+  text-decoration: none;
+}
+#menuButton2 {
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 5cqw;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  left: 3%;
+  top: 70%;
+  background-color: #f3f3f300;
+}
+#lukButton2 {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 5cqw;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  left: 3%;
+  top: 3%;
+}
+#dropdownMenu2 {
+  position: absolute;
+  background-color: #f3f3f3;
+  background-image: radial-gradient(circle, rgb(255, 196, 0) 10%, rgba(0, 0, 0, 0.45) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  min-height: 100vh;
+  opacity: 95%;
+  top: 0%;
+  right: 0px;
+  overflow: hidden;
+  font-family: "Playfair Display", serif;
+  display: none;
+  width: 100vw;
+  height: 100vw;
+  z-index: 999;
+}
+
+#dropdownMenu2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#dropdownMenu2 ul li a {
+  display: block;
+  padding: 50px;
+  color: black;
+  text-decoration: none;
+  font-size: 10cqw;
+  font-weight: 100;
+  font-family: "Playfair Display", serif;
+  margin-top: 25%;
+}
+#dropdownMenu2 :hover {
+  display: block;
+  color: black;
+  font-size: 14cqw;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+
+/* skrifttyper */
+li {
+  font-family: "Roboto", serif;
+  line-height: 150%;
+  font-size: 3.5cqw;
+}
+/* a {
+  text-decoration: none;
+  color: #474747;
+  font-style: italic;
+  font-family: roboto;
+} */
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 5cqw;
+  position: absolute;
+  bottom: 15%;
+  color: #f3f3f3;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 8cqw;
+  padding: 40px;
+}
+
+h3 {
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  font-size: 7cqw;
+}
+h4 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  font-size: 4cqw;
+}
+
+p {
+  font-family: "Roboto", serif;
+  line-height: 150%;
+  font-size: 3.5cqw;
+}
+
+#indhold {
+  padding: 70px;
+}
+#indhold1 {
+  padding: 70px;
+  padding-bottom: 0px;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(37, 37, 37);
+}
+
+.links {
+  text-decoration: none;
+  color: #474747;
+  font-family: roboto;
+  font-size: 2.5cqw;
+  font-style: italic;
+}
+.links:hover {
+  font-weight: bolder;
+}
+.site:hover {
+  font-weight: bolder;
+  color: #474747;
+}
+.site {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  font-size: 3.5cqw;
+  font-weight: bold;
+}
+/* footeren, linje og tal på alle sider */
+.linje {
+  width: 90%; /* Stregen fylder 80% af bredden */
+  height: 1px; /* Tynd streg */
+  background-color: #343434;
+  margin: 0 auto 10px;
+}
+
+.footer {
+  text-align: center; /* Centrerer tekst og linje */
+  padding: 20px 0;
+}
+
+/* Styling for navigation */
+#tal {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#tal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#tal li {
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 6cqw;
+}
+
+#tal a {
+  text-decoration: none;
+  color: black;
+}
+
+#tal a:hover {
+  color: #474747;
+}
+#indhold {
+  display: block; /* Standard bloklayout til mobil */
+  padding: 80px; /* Afstand på små skærme */
+}
+
+.billeder,
+.ommig,
+.cv {
+  width: 100%; /* Gør alle sektioner 100% brede på små skærme */
+  margin-bottom: 20px; /* Afstand mellem sektionerne */
+}
+
+/*over 600px bredde*/
+@media (min-width: 800px) {
+  /* HEADER */
+
+  .logo {
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    font-size: 2cqw;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+  }
+  #menuButton2 {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 2cqw;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    left: 1.5%;
+    top: 54%;
+  }
+  #lukButton2 {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 2cqw;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    left: 1.5%;
+    top: 2.5%;
+  }
+  #dropdownMenu2 {
+    position: absolute;
+    background-color: #f3f3f3; /* Lys grå nuance */
+    background-image: radial-gradient(circle, rgb(255, 196, 0) 10%, rgba(0, 0, 0, 0.45) 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    min-height: 100vh;
+    opacity: 95%;
+    top: 0%;
+    right: 0px;
+    overflow: hidden;
+    font-family: "Playfair Display", serif;
+    display: none; /* Starter skjult */
+    width: 100vw;
+
+    z-index: 999;
+  }
+  #dropdownMenu2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #dropdownMenu2 ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 4cqw;
+    font-family: "Playfair Display", serif;
+    z-index: 1000;
+    margin-top: 6%;
+  }
+  #dropdownMenu2 :hover {
+    display: block;
+    color: black;
+    font-size: 5cqw;
+    font-weight: bolder;
+    font-family: "Playfair Display", serif;
+  }
+  #menuButton {
+    background: none;
+    border: none;
+    color: #f3f3f3;
+    cursor: pointer;
+    font-size: 2cqw;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    bottom: 43%;
+    left: 1%;
+  }
+
+  #dropdownMenu {
+    position: absolute;
+    top: 55%;
+    overflow: hidden;
+    font-family: "Playfair Display", serif;
+    display: none; /* Starter skjult */
+    text-align: left;
+    z-index: 1000;
+    background-color: none;
+  }
+  #dropdownMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #dropdownMenu ul li a {
+    display: block;
+    color: #f3f3f3a0;
+    text-decoration: none;
+    font-size: 1.5cqw;
+    font-weight: 100;
+    font-family: "Playfair Display", serif;
+  }
+
+  /* skrifttyper */
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    font-size: 2cqw;
+    position: absolute;
+    color: #f3f3f3;
+    bottom: 50%;
+    left: 1%;
+    text-align: left;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 5cqw;
+    padding: 40px;
+  }
+
+  h3 {
+    font-family: "Bodoni Moda", serif;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+    font-size: 7cqw;
+  }
+
+  p {
+    font-family: "Roboto", serif;
+    line-height: 150%;
+    font-size: 1.3cqw;
+  }
+
+  #indhold {
+    padding: 200px;
+    margin: 200px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+  }
+  #indhold1 {
+    padding: 200px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+  }
+
+  .content-section {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .billeder {
+    flex: 1;
+    padding: 50px;
+    margin-top: 150px;
+  }
+
+  .ommig,
+  .cv {
+    flex: 2;
+    padding: 0 20px;
+  }
+
+  .hunde {
+    top: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative; /* Brug absolute i stedet for relative for at centrere */
+    z-index: 0;
+    width: 1000px;
+    height: 500px;
+    left: 50%; /* Centrerer horisontalt */
+    transform: translateX(-50%); /* Korrigerer for at sikre, at det er perfekt centreret */
+  }
+  .links {
+    text-decoration: none;
+    color: #474747;
+    font-family: roboto;
+    font-size: 1cqw;
+    font-style: italic;
+  }
+  .figma {
+    width: 910px;
+    height: 600px;
+  }
+  li {
+    font-family: "Roboto", serif;
+    line-height: 150%;
+    font-size: 1.3cqw;
+  }
+  .site {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 2cqw;
+    font-weight: bold;
+  }
+}
