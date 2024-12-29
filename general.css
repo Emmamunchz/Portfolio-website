@@ -32,11 +32,7 @@ img {
 html {
   scroll-behavior: smooth;
 }
-/* proces */
-.figma {
-  width: 370px;
-  height: 200px;
-}
+
 /* forside */
 .hero {
   height: 100vh;
@@ -125,9 +121,6 @@ header {
   position: fixed;
   top: 0%;
   left: 0%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 400;
   background-color: none;
 }
@@ -151,6 +144,7 @@ header {
   top: 70%;
   background-color: #f3f3f300;
 }
+
 #lukButton2 {
   background: none;
   border: none;
@@ -176,7 +170,6 @@ header {
   overflow: hidden;
   font-family: "Playfair Display", serif;
   width: 100vw;
-  height: 100vw;
   z-index: 999;
   display: none;
 }
@@ -185,6 +178,7 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
+  z-index: 1000;
 }
 
 #dropdownMenu2 ul li a {
@@ -196,6 +190,7 @@ header {
   font-weight: 100;
   font-family: "Playfair Display", serif;
   margin-top: 25%;
+  z-index: 1000;
 }
 
 /* teksten bliver fed, så man ved den er interaktiv */
@@ -229,7 +224,8 @@ h2 {
   font-weight: bolder;
   text-align: center;
   font-size: 8cqw;
-  padding: 40px;
+  padding: 20px;
+  padding-bottom: 50px;
 }
 
 h3 {
@@ -257,6 +253,10 @@ p {
 #indhold1 {
   padding: 80px;
   padding-bottom: 0px;
+}
+
+#indhold {
+  padding: 80px;
 }
 
 /* artikel billeder */
@@ -335,17 +335,13 @@ p {
   color: #474747;
   font-weight: bolder;
 }
-#indhold {
-  display: block;
-  padding: 80px;
-}
 
 /* index om mig */
-.billeder,
-.ommig,
-.cv {
+.billeder {
   width: 100%;
-  margin-bottom: 20px;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 /*over 600-800px bredde, så tablet indtil det blir desktop*/
 @media (min-width: 600px) and (max-width: 899px) {
@@ -577,12 +573,6 @@ p {
     font-style: italic;
   }
 
-  /* proces */
-  .figma {
-    width: 910px;
-    height: 600px;
-  }
-
   /* list, så det tekst jeg har i punktform */
   li {
     font-family: "Roboto", serif;
@@ -799,12 +789,6 @@ p {
     font-family: roboto;
     font-size: 1cqw;
     font-style: italic;
-  }
-
-  /* proces */
-  .figma {
-    width: 910px;
-    height: 600px;
   }
 
   /* list, så det tekst jeg har i punktform */
