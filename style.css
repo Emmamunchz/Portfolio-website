@@ -10,6 +10,17 @@ img {
   display: block;
 }
 
+/* skrift */
+#projekter a {
+  font-family: "Bodoni Moda", serif;
+  font-size: 6cqw;
+  font-weight: 800;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
 /* 2 forskellige svg til mobil og desktop */
 .tidslinje-mobil {
   width: 100%;
@@ -149,6 +160,94 @@ h6 {
 .lyd {
   align-items: center;
   padding: 20px;
+}
+@media only screen and (max-width: 428px) {
+  /* projekter menuen */
+  #projekter {
+    text-align: left;
+    margin: 60px 10px;
+  }
+
+  #projekter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* streger */
+  #projekter li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 40px 40px;
+    position: relative;
+  }
+
+  /* skrift */
+  #projekter a {
+    font-family: "Bodoni Moda", serif;
+    font-size: 5cqw;
+    font-weight: 800;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    position: relative;
+  }
+  /* placering af svg */
+  #projekter a::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 40px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+  /* så svg forsvinder */
+  #projekter a:hover::before {
+    opacity: 0;
+  }
+
+  /* 4 forskellige svg */
+
+  #projekter .link-web::before {
+    background-image: url("svg/02.svg");
+    background-size: 320px 300px;
+    left: 0%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    display: none;
+  }
+
+  #projekter .link-ux::before {
+    background-image: url("svg/03.svg");
+    background-size: 320px 300px;
+    left: -3%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    display: none;
+  }
+
+  #projekter .link-animation::before {
+    background-image: url("svg/04.svg");
+    background-size: 150px 300px;
+    left: -1%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    display: none;
+  }
+
+  #projekter .link-content::before {
+    background-image: url("svg/05.svg");
+    background-size: 340px 300px;
+    left: -3%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    height: calc(100% + 38px);
+    display: none;
+  }
 }
 /*over 600px bredde*/
 @media (min-width: 600px) and (max-width: 799px) {

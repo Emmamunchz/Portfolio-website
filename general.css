@@ -343,8 +343,18 @@ p {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+@media only screen and (max-width: 428px) {
+  #indhold1 {
+    padding: 58px;
+    padding-top: 0px;
+  }
+  #indhold {
+    padding: 58px;
+    padding-top: 40px;
+  }
+}
 /*over 600-800px bredde, så tablet indtil det blir desktop*/
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 799px) {
   .logo {
     font-family: "Playfair Display", serif;
     font-weight: 100;
@@ -590,7 +600,7 @@ p {
 }
 
 /*over 800px bredde, så desktop*/
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   /* HEADER */
   /* emma */
   .logo {
