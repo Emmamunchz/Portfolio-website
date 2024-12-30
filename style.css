@@ -121,11 +121,34 @@ h6 {
   font-family: "Playfair Display", serif;
   font-weight: 100;
 }
+.svg {
+  width: 15%;
+  height: 10%;
+  align-items: center;
+  opacity: 80%;
+  transform-origin: center; /* Sørg for, at rotationen sker fra midten */
+  animation: rotateAnimation 10s linear infinite; /* Kontinuerlig rotation */
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-40deg);
+  }
+}
 
 .gun {
   width: 100%;
   height: 100%;
   align-items: center;
+  opacity: 80%;
+}
+
+.lyd {
+  align-items: center;
+  padding: 20px;
 }
 /*over 600px bredde*/
 @media (min-width: 600px) and (max-width: 799px) {
@@ -356,5 +379,28 @@ h6 {
     height: 100%;
     align-items: center;
     transform: translateX(100%);
+    opacity: 80%;
+  }
+  .svg {
+    width: 15%;
+    height: 10%;
+    align-items: center;
+    opacity: 80%;
+    transform-origin: center; /* Sørg for, at rotationen sker fra midten */
+    animation: rotateAnimation 10s linear infinite; /* Kontinuerlig rotation */
+  }
+
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(-40deg);
+    }
+  }
+  .lyd {
+    align-items: center;
+    padding-left: 35%;
+    padding-top: 10%;
   }
 }
