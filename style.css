@@ -10,6 +10,39 @@ img {
   display: block;
 }
 
+/* om mig sektion på forsiden */
+@keyframes slide-across {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.banner {
+  position: relative;
+  left: 0%;
+  width: 100%;
+  font-size: 10cqw;
+  font-weight: thin;
+  font-family: "Bodoni Moda", serif;
+  background: none;
+  color: rgb(0, 0, 0);
+  padding: 100px 0;
+  padding-left: 100px;
+  white-space: nowrap; /* Forhindrer linjeskift */
+  animation: slide-across 13s linear infinite;
+  z-index: 200;
+  text-decoration: 1px underline;
+}
+
+.sky {
+  position: relative;
+  z-index: 300;
+  width: 100%;
+  height: 158px;
+}
 /* skrift */
 #projekter a {
   font-family: "Bodoni Moda", serif;
@@ -501,5 +534,39 @@ h6 {
     align-items: center;
     padding-left: 35%;
     padding-top: 10%;
+  }
+  /* om mig sektion på forsiden */
+  @keyframes slide-across {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .banner {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    font-size: 8cqw;
+    font-weight: thin;
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 0, 0);
+    padding: 100px 0;
+    white-space: nowrap;
+    animation: slide-across 15s linear infinite;
+    z-index: 200;
+    text-decoration: 1px underline;
+    padding-bottom: 400px;
+  }
+  .sky {
+    position: relative;
+    z-index: 300;
+    left: 10%;
+    width: 80%;
+    height: 8px;
+    padding-bottom: 600px;
+    opacity: 90%;
   }
 }
