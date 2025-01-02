@@ -9,17 +9,19 @@ img {
   height: auto;
   display: block;
 }
+/* standart reset */
 
 /* om mig sektion på forsiden */
+/* animation */
 @keyframes slide-across {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-200%);
+    transform: translateX(-500%);
   }
 }
-
+/* teksten i banneret - white-space gør så den ik laver flere linjer. z-index for at teksten kommer under billedet */
 .banner {
   position: relative;
   left: 0%;
@@ -31,30 +33,20 @@ img {
   color: rgb(0, 0, 0);
   padding: 100px 0;
   padding-left: 100px;
-  white-space: nowrap; /* Forhindrer linjeskift */
-  animation: slide-across 13s linear infinite;
+  white-space: nowrap;
+  animation: slide-across 25s linear infinite;
   z-index: 200;
-  text-decoration: 1px underline;
+  text-decoration: none;
 }
-
+/* billede af sky, som ligger over banneret */
 .sky {
   position: relative;
   z-index: 300;
   width: 100%;
   height: 158px;
 }
-/* skrift */
-#projekter a {
-  font-family: "Bodoni Moda", serif;
-  font-size: 6cqw;
-  font-weight: 800;
-  font-style: italic;
-  color: black;
-  text-decoration: none;
-  position: relative;
-}
 
-/* 2 forskellige svg til mobil og desktop */
+/* 2 forskellige svg af tidslinje til mobil og desktop i om mig. så det ene er blokeret i mobil og omvendt*/
 .tidslinje-mobil {
   width: 100%;
   height: 100%;
@@ -68,11 +60,12 @@ img {
 }
 
 /* projekter menuen */
+/* containeren */
 #projekter {
   text-align: left;
   margin: 60px 10px;
 }
-
+/* så der ik kommer list dots på */
 #projekter ul {
   list-style: none;
   padding: 0;
@@ -87,7 +80,7 @@ img {
   position: relative;
 }
 
-/* skrift */
+/* skriften */
 #projekter a {
   font-family: "Bodoni Moda", serif;
   font-size: 6cqw;
@@ -158,20 +151,21 @@ h4 {
   font-weight: 600;
   padding-bottom: 10px;
 }
-/* mine projekter */
+/* mine projekter tekst */
 h6 {
   font-size: 3.5cqw;
   color: black;
   font-family: "Playfair Display", serif;
   font-weight: 100;
 }
+/* pasta der rotere på animation siden */
 .svg {
   width: 15%;
   height: 10%;
   align-items: center;
   opacity: 80%;
-  transform-origin: center; /* Sørg for, at rotationen sker fra midten */
-  animation: rotateAnimation 10s linear infinite; /* Kontinuerlig rotation */
+  transform-origin: center;
+  animation: rotateAnimation 10s linear infinite;
 }
 
 @keyframes rotateAnimation {
@@ -182,18 +176,20 @@ h6 {
     transform: rotate(-40deg);
   }
 }
-
+/* lottiefile til passionssite */
 .gun {
   width: 100%;
   height: 100%;
   align-items: center;
   opacity: 80%;
 }
-
+/* audio, mp3 til ux/ui site */
 .lyd {
   align-items: center;
   padding: 20px;
 }
+
+/* her er skærmen mindre end mobil på desktop. så hvis man sidder med sin fysiske mobil er der ingen krudseduller, da hover jo ik virker der og vil forværre brugeroplevelsen */
 @media only screen and (max-width: 428px) {
   /* projekter menuen */
   #projekter {
@@ -282,7 +278,7 @@ h6 {
     display: none;
   }
 }
-/*over 600px bredde*/
+/*over 600px bredde, til midt imellem/tablet*/
 @media (min-width: 600px) and (max-width: 799px) {
   #projekter {
     text-align: center;
@@ -394,7 +390,7 @@ h6 {
     opacity: 70%;
   }
 }
-
+/* desktop view */
 @media (min-width: 800px) {
   /* Menu med mine projekter */
   #projekter {
@@ -492,6 +488,7 @@ h6 {
   }
 
   /* To forskellige svg  */
+  /* her er mobil blokeret og en anden svg blir vist, som er lowkey det samme, den ligger bare ned */
   .tidslinje-mobil {
     display: none;
   }
@@ -506,6 +503,7 @@ h6 {
     padding-bottom: 10px;
     opacity: 70%;
   }
+  /* lottiefile */
   .gun {
     width: 100%;
     height: 100%;
@@ -513,6 +511,7 @@ h6 {
     transform: translateX(100%);
     opacity: 80%;
   }
+  /* pasta */
   .svg {
     width: 15%;
     height: 10%;
@@ -530,6 +529,7 @@ h6 {
       transform: rotate(-40deg);
     }
   }
+  /* sang til emnesite */
   .lyd {
     align-items: center;
     padding-left: 35%;
@@ -538,10 +538,10 @@ h6 {
   /* om mig sektion på forsiden */
   @keyframes slide-across {
     0% {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-300%);
     }
   }
 
@@ -549,16 +549,16 @@ h6 {
     position: relative;
     left: 0%;
     width: 100%;
+    height: 100%;
     font-size: 8cqw;
     font-weight: thin;
-    font-family: "Playfair Display", serif;
+    font-family: "Bodoni Moda", serif;
     color: rgb(0, 0, 0);
-    padding: 100px 0;
-    white-space: nowrap;
-    animation: slide-across 15s linear infinite;
+    padding-left: 100px;
+    white-space: nowrap; /* Forhindrer linjeskift */
+    animation: slide-across 35s linear infinite;
     z-index: 200;
-    text-decoration: 1px underline;
-    padding-bottom: 400px;
+    text-decoration: none;
   }
   .sky {
     position: relative;
@@ -566,7 +566,6 @@ h6 {
     left: 10%;
     width: 80%;
     height: 8px;
-    padding-bottom: 600px;
-    opacity: 90%;
+    padding-bottom: 850px;
   }
 }

@@ -9,7 +9,8 @@ img {
   height: auto;
   display: block;
 }
-
+/* standart reset */
+/* skrifttyper */
 .playfair-display {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -29,6 +30,7 @@ img {
   font-style: normal;
 }
 
+/* så den scroller smotth i menuen */
 html {
   scroll-behavior: smooth;
 }
@@ -124,7 +126,7 @@ header {
   z-index: 400;
   background-color: none;
 }
-/* emma */
+/* emma, så man altid kan tilgå forsiden nemt */
 .logo {
   font-family: "Playfair Display", serif;
   font-weight: 100;
@@ -254,18 +256,16 @@ p {
   padding: 80px;
   padding-bottom: 0px;
 }
-
+/* indhold på resten af sitet */
 #indhold {
   padding: 80px;
 }
-
 /* artikel billeder */
 .screen {
   width: 100%;
   height: 100%;
   border: 1px solid rgb(37, 37, 37);
 }
-
 /* billedtekst (link) */
 .links {
   text-decoration: none;
@@ -279,7 +279,6 @@ p {
   font-weight: bolder;
 }
 /* så man ved det er interaktivt */
-
 .site:hover {
   font-weight: bolder;
   color: #474747;
@@ -303,6 +302,7 @@ p {
 .footer {
   text-align: center;
   padding: 20px 0;
+  z-index: 1000;
 }
 
 #tal {
@@ -335,14 +335,7 @@ p {
   color: #474747;
   font-weight: bolder;
 }
-
-/* index om mig */
-.billeder {
-  width: 100%;
-  height: 100%;
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
+/* next er pilene i footeren */
 .next {
   font-size: 6cqw;
   font-weight: 100;
@@ -350,7 +343,14 @@ p {
   padding: 70px;
   opacity: 50%;
 }
-
+/* billeder om mig og cv */
+.billeder {
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+/* margin og padding, blir mindre på ægte mobil */
 @media only screen and (max-width: 428px) {
   #indhold1 {
     padding: 58px;
@@ -506,6 +506,7 @@ p {
     height: 100%;
     border: 1px solid rgb(37, 37, 37);
   }
+  /* brødtekst */
   p {
     font-family: "Roboto", serif;
     line-height: 150%;
@@ -524,7 +525,6 @@ p {
     font-weight: bolder;
   }
   /* så man ved det er interaktivt */
-
   .site:hover {
     font-weight: bolder;
     color: #474747;
@@ -558,13 +558,13 @@ p {
     display: flex;
     margin-bottom: 50px;
   }
-
+  /* om mig og cv billeder */
   .billeder {
     flex: 1;
     padding: 50px;
     margin-top: 50px;
   }
-
+  /* på desktop står de i to kolonner */
   .ommig,
   .cv {
     flex: 2;
@@ -823,6 +823,7 @@ p {
     font-size: 1.5cqw;
     font-weight: bold;
   }
+  /* pile */
   .next {
     font-size: 5cqw;
     font-weight: 100;
