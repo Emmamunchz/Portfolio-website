@@ -316,7 +316,7 @@ p {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 #tal li {
@@ -343,6 +343,14 @@ p {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+.next {
+  font-size: 6cqw;
+  font-weight: 100;
+  font-family: "Bodoni Moda", serif;
+  padding: 70px;
+  opacity: 50%;
+}
+
 @media only screen and (max-width: 428px) {
   #indhold1 {
     padding: 58px;
@@ -814,5 +822,12 @@ p {
     font-family: "Playfair Display", serif;
     font-size: 1.5cqw;
     font-weight: bold;
+  }
+  .next {
+    font-size: 5cqw;
+    font-weight: 100;
+    font-family: "Bodoni Moda", serif;
+    padding-left: 300px;
+    padding-right: 300px;
   }
 }
