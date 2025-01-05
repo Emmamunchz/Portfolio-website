@@ -33,6 +33,7 @@ img {
 /* så den scroller smotth i menuen */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* forside */
@@ -74,10 +75,12 @@ html {
   position: absolute;
   bottom: 10%;
 }
+#menuButton:hover {
+  font-weight: 500;
+}
 
 #dropdownMenu {
   position: absolute;
-
   top: 30%;
   right: 0px;
   border-radius: 8px;
@@ -106,12 +109,14 @@ html {
   font-weight: 100;
   font-family: "Playfair Display", serif;
 }
-
+#dropdownMenu ul li a:hover {
+  font-weight: 500;
+}
 /* bagrund */
 /* jeg har lavet en cirkel gradient, for at tilføje baggrunden lidt støj, og for at give det her moderne minimalistiske look. Det er en cirkel for at det ser mest naturligt ud, og så høj oppazity på farverne for at det bare lige kan nænnes */
 body {
   background-color: #f3f3f3; /* Lys grå nuance */
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.14) 10%, rgba(0, 0, 0, 0.01) 100%);
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 100%, rgba(0, 0, 0, 0.01) 100%);
   background-blend-mode: multiply;
   background-size: cover;
   min-height: 100vh;
@@ -134,6 +139,10 @@ header {
   color: black;
   text-decoration: none;
 }
+
+.logo:hover {
+  color: #424242;
+}
 /* general menu der skal være tilgeængelig hele tiden */
 #menuButton2 {
   border: none;
@@ -146,7 +155,9 @@ header {
   top: 70%;
   background-color: #f3f3f300;
 }
-
+#menuButton2:hover {
+  color: #424242;
+}
 #lukButton2 {
   background: none;
   border: none;
