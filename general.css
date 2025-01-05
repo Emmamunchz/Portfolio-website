@@ -179,7 +179,7 @@ header {
   overflow: hidden;
   font-family: "Playfair Display", serif;
   width: 100vw;
-  z-index: 999;
+  z-index: 2000;
   display: none;
 }
 
@@ -428,7 +428,7 @@ p {
     display: none; /* Starter skjult */
     width: 100vw;
 
-    z-index: 999;
+    z-index: 1500;
   }
   #dropdownMenu2 ul {
     list-style: none;
@@ -675,8 +675,7 @@ p {
     font-family: "Playfair Display", serif;
     display: none; /* Starter skjult */
     width: 100vw;
-
-    z-index: 999;
+    z-index: 1500;
   }
   #dropdownMenu2 ul {
     list-style: none;
@@ -846,7 +845,7 @@ p {
     font-size: 3cqw;
     font-weight: lighter;
     font-family: "Bodoni Moda", serif;
-    padding-left: 30px;
+    padding-left: 360px;
     padding-right: 360px;
   }
   .scroll {
@@ -856,7 +855,7 @@ p {
     text-align: left;
     font-size: 1cqw;
     padding-left: 88px;
-    z-index: 1000;
+    z-index: 0;
     position: relative;
     text-decoration: none;
     color: #343434;
