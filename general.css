@@ -13,7 +13,6 @@ img {
 /* skrifttyper */
 .playfair-display {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -25,7 +24,6 @@ img {
 
 .bodoni-moda {
   font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
 }
@@ -92,7 +90,6 @@ html {
   height: 50vh;
   align-items: end;
   z-index: 1000;
-  background-color: none;
 }
 #dropdownMenu ul {
   list-style: none;
@@ -129,7 +126,6 @@ header {
   top: 0%;
   left: 0%;
   z-index: 400;
-  background-color: none;
 }
 /* emma, så man altid kan tilgå forsiden nemt */
 .logo {
