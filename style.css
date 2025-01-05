@@ -202,6 +202,11 @@ h6 {
   padding: 20px;
 }
 
+.punkter {
+  padding-left: 15px;
+  padding-top: 12px;
+}
+
 /* her er skærmen mindre end mobil på desktop. så hvis man sidder med sin fysiske mobil er der ingen krudseduller, da hover jo ik virker der og vil forværre brugeroplevelsen */
 @media only screen and (max-width: 428px) {
   /* projekter menuen */
@@ -588,5 +593,9 @@ h6 {
     font-size: 1.3cqw;
     text-decoration: none;
     color: black;
+  }
+  .punkter {
+    padding-left: 20px;
+    padding-top: 15px;
   }
 }
