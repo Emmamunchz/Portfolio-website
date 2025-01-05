@@ -257,6 +257,19 @@ p {
   font-size: 3.5cqw;
 }
 
+.scroll {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+  font-size: 2.5cqw;
+  padding-left: 25px;
+  z-index: 1000;
+  position: relative;
+  text-decoration: none;
+  color: #343434;
+}
+
 /* indhold på index */
 #indhold1 {
   padding: 80px;
@@ -343,11 +356,11 @@ p {
 }
 /* next er pilene i footeren */
 .next {
-  font-size: 6cqw;
-  font-weight: 100;
+  font-size: 4.5cqw;
+  color: #343434;
+  font-weight: lighter;
   font-family: "Bodoni Moda", serif;
   padding: 70px;
-  opacity: 50%;
 }
 /* billeder om mig og cv */
 .billeder {
@@ -830,10 +843,22 @@ p {
   }
   /* pile */
   .next {
-    font-size: 5cqw;
-    font-weight: 100;
+    font-size: 3cqw;
+    font-weight: lighter;
     font-family: "Bodoni Moda", serif;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 360px;
+    padding-right: 360px;
+  }
+  .scroll {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+    font-size: 1cqw;
+    padding-left: 88px;
+    z-index: 1000;
+    position: relative;
+    text-decoration: none;
+    color: #343434;
   }
 }
