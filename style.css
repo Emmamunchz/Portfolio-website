@@ -10,7 +10,58 @@ img {
   display: block;
 }
 /* standart reset */
+/* Style til pauseskærmen til om mig*/
+#pause {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+  background-image: radial-gradient(circle, #cd6979 10%, #656584 100%);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 4cqw;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1500;
+  color: white;
+}
 
+#pause.show {
+  opacity: 98%;
+  pointer-events: all;
+}
+
+#pause2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+  background-image: radial-gradient(circle, rgb(255, 196, 0) 10%, rgba(0, 0, 0, 0.45) 100%);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 4cqw;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1500;
+  color: white;
+}
+
+#pause2.show {
+  opacity: 98%;
+  pointer-events: all;
+}
 /* om mig sektion på forsiden */
 /* animation */
 @keyframes slide-across {
@@ -597,5 +648,56 @@ h6 {
   .punkter {
     padding-left: 20px;
     padding-top: 15px;
+  }
+  #pause {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+    background-image: radial-gradient(circle, #cd6979 10%, #656584 100%);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 1cqw;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 1500;
+    color: white;
+  }
+
+  #pause.show {
+    opacity: 98%;
+    pointer-events: all;
+  }
+
+  #pause2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+    background-image: radial-gradient(circle, rgb(255, 196, 0) 10%, rgba(0, 0, 0, 0.45) 100%);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 1cqw;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 1500;
+    color: white;
+  }
+
+  #pause2.show {
+    opacity: 98%;
+    pointer-events: all;
   }
 }
