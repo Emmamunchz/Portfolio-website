@@ -389,253 +389,86 @@ p {
   }
 }
 /*over 600-800px bredde, så tablet indtil det blir desktop*/
-@media (min-width: 600px) and (max-width: 799px) {
-  .logo {
-    font-family: "Playfair Display", serif;
-    font-weight: 100;
-    font-size: 3cqw;
-    color: black;
-    text-decoration: none;
-    padding: 10px;
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* sektion under forside (lottiefile) */
+  .hunde {
+    height: 40vh;
   }
-  /* general menu */
-  #menuButton2 {
-    background: none;
-    border: none;
-    color: black;
-    cursor: pointer;
+  /* menuen på forsiden */
+  #menuButton {
+    font-size: 2cqw;
+  }
+  #dropdownMenu ul li a {
+    padding: 0px;
+    font-size: 2cqw;
+  }
+  /* emma, så man altid kan tilgå forsiden nemt */
+  .logo {
     font-size: 2.8cqw;
-    font-family: "Playfair Display", serif;
-    position: absolute;
-    top: 54%;
-    left: 1%;
+  }
+  /* general menu der skal være tilgeængelig hele tiden */
+  #menuButton2 {
+    font-size: 2.5cqw;
   }
   #lukButton2 {
-    background: none;
-    border: none;
-    color: black;
-    cursor: pointer;
-    font-size: 2cqw;
-    font-family: "Playfair Display", serif;
-    position: absolute;
-    left: 1.5%;
-    top: 2.5%;
-  }
-  #dropdownMenu2 {
-    position: absolute;
-    background-color: #f3f3f3; /* Lys grå nuance */
-    background-image: radial-gradient(circle, rgb(255, 196, 0) 10%, rgba(0, 0, 0, 0.45) 100%);
-    background-blend-mode: multiply;
-    background-size: cover;
-    min-height: 100vh;
-    opacity: 95%;
-    top: 0%;
-    right: 0px;
-    overflow: hidden;
-    font-family: "Playfair Display", serif;
-    display: none; /* Starter skjult */
-    width: 100vw;
-
-    z-index: 1500;
-  }
-  #dropdownMenu2 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #dropdownMenu2 ul li a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    font-size: 4cqw;
-    font-family: "Playfair Display", serif;
-    z-index: 1000;
-    margin-top: 6%;
-  }
-  #dropdownMenu2 :hover {
-    display: block;
-    color: black;
-    font-size: 5cqw;
-    font-weight: 500;
-    font-family: "Playfair Display", serif;
-  }
-
-  /* forside menu */
-  #menuButton {
-    background: none;
-    border: none;
-    color: #f3f3f3;
-    cursor: pointer;
-    font-size: 3cqw;
-    font-family: "Playfair Display", serif;
-    position: absolute;
-    bottom: 43%;
-    left: 1%;
-  }
-
-  #dropdownMenu {
-    position: absolute;
-    top: 55%;
-    overflow: hidden;
-    font-family: "Playfair Display", serif;
-    display: none; /* Starter skjult */
-    text-align: left;
-    z-index: 1000;
-    background-color: none;
-  }
-  #dropdownMenu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #dropdownMenu ul li a {
-    display: block;
-    color: #f3f3f3a0;
-    text-decoration: none;
-    font-size: 2cqw;
-    font-weight: 100;
-    font-family: "Playfair Display", serif;
-  }
-
-  /* skrifttyper */
-  h1 {
-    font-family: "Playfair Display", serif;
-    font-weight: 100;
-    font-size: 3cqw;
-    position: absolute;
-    color: #f3f3f3;
-    bottom: 50%;
-    left: 1%;
-    text-align: left;
-  }
-
-  h2 {
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-weight: bolder;
-    text-align: center;
-    font-size: 3cqw;
-    padding: 40px;
-  }
-
-  h3 {
-    font-family: "Bodoni Moda", serif;
-    font-style: italic;
-    font-weight: 800;
-    text-align: center;
-    font-size: 7cqw;
-  }
-  /* artikel billeder */
-  .screen {
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgb(37, 37, 37);
-  }
-  /* brødtekst */
-  p {
-    font-family: "Roboto", serif;
-    line-height: 150%;
     font-size: 2.5cqw;
+  }
+  #dropdownMenu2 ul li a {
+    font-size: 3cqw;
+    margin-top: 5%;
+  }
+  /* skrifttyper */
+  li {
+    font-size: 2cqw;
+  }
+  h1 {
+    font-size: 2cqw;
+  }
+  h2 {
+    font-size: 4.5cqw;
+  }
+  p {
+    font-size: 2cqw;
+  }
+  .scroll {
+    font-size: 1.5cqw;
+    padding-left: 50px;
+  }
+  #indhold {
+    padding: 140px;
   }
   /* billedtekst (link) */
   .links {
-    text-decoration: none;
-    color: #474747;
-    font-family: roboto;
-    font-size: 4cqw;
-    font-style: italic;
-  }
-  /* så man ved det er interaktivt */
-  .links:hover {
-    font-weight: bolder;
-  }
-  /* så man ved det er interaktivt */
-  .site:hover {
-    font-weight: bolder;
-    color: #474747;
+    font-size: 1.5cqw;
   }
   /* min løsning link */
   .site {
-    text-decoration: none;
-    color: #000000;
-    font-family: "Playfair Display", serif;
-    font-size: 8cqw;
-    font-weight: bold;
+    font-size: 2cqw;
   }
-  /* general indhold */
-  #indhold {
-    padding: 150px;
-    margin-top: 0px;
-    padding-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 50px;
+  /* footeren, linje og tal på alle sider */
+  #tal li {
+    font-size: 4cqw;
   }
-  /* index indhold */
-  #indhold1 {
-    padding: 40px;
-    margin-top: 0px;
-    padding-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 50px;
+  /* next er pilene i footeren */
+  .next {
+    font-size: 2.5cqw;
+    color: #343434;
+    font-weight: lighter;
+    font-family: "Bodoni Moda", serif;
+    padding: 60px;
   }
-  /* om mig på desk. for at lave to kolonner, som mobil ikke indeholder */
-  .content-section {
-    display: flex;
-    margin-bottom: 50px;
-  }
-  /* om mig og cv billeder */
+  /* billeder om mig og cv */
   .billeder {
-    flex: 1;
-    padding: 50px;
-    margin-top: 50px;
-  }
-  /* på desktop står de i to kolonner */
-  .ommig,
-  .cv {
-    flex: 2;
-    padding: 0px;
-  }
-  /* sektion under forsiden, lottiefile */
-  .hunde {
-    background-repeat: no-repeat;
-    display: flex;
     position: relative;
-    width: 800px;
-    height: 500px;
-    left: 50%;
-    transform: translateX(-50%);
-    /* transform sikre at det er lige i midten */
-  }
-
-  /* billedtekst */
-  .links {
-    text-decoration: none;
-    color: #474747;
-    font-family: roboto;
-    font-size: 1cqw;
-    font-style: italic;
-  }
-
-  /* list, så det tekst jeg har i punktform */
-  li {
-    font-family: "Roboto", serif;
-    line-height: 150%;
-    font-size: 1.3cqw;
-  }
-  /* min løsning knap */
-  .site {
-    text-decoration: none;
-    color: #000000;
-    font-family: "Playfair Display", serif;
-    font-size: 1.5cqw;
-    font-weight: bold;
+    width: 40%;
+    height: 40%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    left: 30%;
   }
 }
-
-/*over 800px bredde, så desktop*/
-@media (min-width: 800px) {
+/*over 1025px bredde, så desktop*/
+@media (min-width: 1025px) {
   /* HEADER */
   /* emma */
   .logo {

@@ -347,103 +347,30 @@ h6 {
     display: none;
   }
 }
-/*over 600px bredde, til midt imellem/tablet*/
-@media (min-width: 600px) and (max-width: 799px) {
-  #projekter {
-    text-align: center;
-    margin: 60px 10px;
+/*over 600-800px bredde, så tablet indtil det blir desktop*/
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Style til pauseskærmen til om mig*/
+  #pause {
+    font-size: 1.5cqw;
   }
-
-  #projekter ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  #pause2 {
+    font-size: 1.5cqw;
   }
-  /* streger */
-  #projekter li {
-    display: flex;
-    border-bottom: 1px solid black;
-    padding: 60px 60px;
-    position: relative;
+  /* om mig sektion på forsiden */
+  /* teksten i banneret - white-space gør så den ik laver flere linjer. z-index for at teksten kommer under billedet */
+  .banner {
+    font-size: 7cqw;
+    padding: 400px 0;
+    margin-bottom: -100px;
+    animation: slide-across 38s linear infinite;
   }
-  /* skrift */
-  #projekter a {
-    font-family: "Bodoni Moda", serif;
-    font-size: 4.5cqw;
-    font-weight: 800;
-    font-style: italic;
-    color: black;
-    text-decoration: none;
-    position: relative;
-  }
-  /* placering af svg */
-  #projekter a::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 50px);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
-  }
-  /* så svg forsvinder */
-  #projekter a:hover::before {
-    opacity: 0;
-  }
-  /* 4 forskellige svg til de forskellige titler */
-  #projekter .link-web::before {
-    background-image: url("svg/02.svg");
-
-    background-size: 400px 700px;
-    left: 5%;
-    background-repeat: no-repeat;
-  }
-
-  #projekter .link-ux::before {
-    background-image: url("svg/03.svg");
-
-    background-size: 400px 700px;
-    left: 2%;
-    background-repeat: no-repeat;
-  }
-
-  #projekter .link-animation::before {
-    background-image: url("svg/04.svg");
-
-    background-size: 200px 700px;
-    left: 4%;
-    background-repeat: no-repeat;
-  }
-
-  #projekter .link-content::before {
-    background-image: url("svg/05.svg");
-    height: calc(100% + 40px);
-    background-size: 420px 700px;
-    left: 1%;
-    background-repeat: no-repeat;
-  }
-  /* underoverskrifter */
-
-  h4 {
+  .kontakt {
     font-size: 2cqw;
-    color: black;
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
   }
-  /* mine projekter titel */
-
-  h6 {
-    font-size: 3cqw;
-    color: black;
-    font-family: "Playfair Display", serif;
-    font-weight: 100;
-    text-align: start;
+  .kontakt1 {
+    font-size: 2.5cqw;
   }
-
-  /* To forskellige svg  */
+  /* 2 forskellige svg af tidslinje til mobil og desktop i om mig. så det ene er blokeret i mobil og omvendt*/
   .tidslinje-mobil {
     display: none;
   }
@@ -451,16 +378,82 @@ h6 {
   .tidslinje-desk {
     width: 100%;
     height: 100%;
+    padding: 80px;
     background-repeat: no-repeat;
     display: block;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 10px;
     opacity: 70%;
   }
+
+  /* projekter menuen */
+  /* så der ik kommer list dots på */
+  /* streger */
+  /* skriften */
+  #projekter a {
+    font-size: 5cqw;
+  }
+  /* placering af svg */
+  /* så svg forsvinder */
+  /* 4 forskellige svg */
+
+  #projekter .link-web::before {
+    background-image: url("svg/02.svg");
+    background-size: 390px 300px;
+    left: 0%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+  }
+
+  #projekter .link-ux::before {
+    background-image: url("svg/03.svg");
+    background-size: 420px 300px;
+    left: 0%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+  }
+
+  #projekter .link-animation::before {
+    background-image: url("svg/04.svg");
+    background-size: 190px 300px;
+    left: -1%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+  }
+
+  #projekter .link-content::before {
+    background-image: url("svg/05.svg");
+    background-size: 470px 300px;
+    left: 1%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    height: calc(100% + 38px);
+  }
+
+  /* underoverskrift */
+  h4 {
+    font-size: 2.6cqw;
+  }
+  /* mine projekter tekst */
+  h6 {
+    font-size: 2cqw;
+  }
+  /* pasta der rotere på animation siden */
+  .svg {
+    width: 10%;
+  }
+  /* lottiefile til passionssite */
+  .gun {
+    margin-left: 30%;
+  }
+  /* audio, mp3 til ux/ui site */
+  .lyd {
+    margin-left: 30%;
+  }
+  .punkter {
+    padding-left: 19px;
+  }
 }
-/* desktop view */
-@media (min-width: 800px) {
+/*over 1025px bredde, så desktop*/
+@media (min-width: 1025px) {
   /* Menu med mine projekter */
   #projekter {
     text-align: center;
