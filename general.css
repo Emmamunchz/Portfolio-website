@@ -34,6 +34,13 @@ html {
   overflow-x: hidden;
 }
 
+#menuButton,
+#menuButton2,
+.links,
+.site {
+  transition: all 0.3s ease-in-out;
+}
+
 /* forside */
 .hero {
   height: 100vh;
@@ -112,7 +119,7 @@ html {
 /* bagrund */
 /* jeg har lavet en cirkel gradient, for at tilføje baggrunden lidt støj, og for at give det her moderne minimalistiske look. Det er en cirkel for at det ser mest naturligt ud, og så høj oppazity på farverne for at det bare lige kan nænnes */
 body {
-  background-color: #f3f3f3; /* Lys grå nuance */
+  background-color: #f3f3f3;
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 100%, rgba(0, 0, 0, 0.01) 100%);
   background-blend-mode: multiply;
   background-size: cover;
@@ -284,6 +291,7 @@ p {
   width: 100%;
   height: 100%;
   border: 1px solid rgb(37, 37, 37);
+  margin-top: 25px;
 }
 /* billedtekst (link) */
 .links {

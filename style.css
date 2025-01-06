@@ -226,7 +226,7 @@ h6 {
 .svg {
   width: 15%;
   height: 10%;
-  align-items: center;
+  place-self: center;
   opacity: 80%;
   transform-origin: center;
   animation: rotateAnimation 10s linear infinite;
