@@ -177,7 +177,7 @@ img {
 #projekter .link-ux::before,
 #projekter .link-animation::before,
 #projekter .link-content::before {
-  transition: all 0.8s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 /* 4 forskellige svg */
 
