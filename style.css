@@ -172,6 +172,12 @@ img {
   opacity: 0;
 }
 
+#projekter .link-web::before,
+#projekter .link-ux::before,
+#projekter .link-animation::before,
+#projekter .link-content::before {
+  transition: all 0.8s ease-in-out;
+}
 /* 4 forskellige svg */
 
 #projekter .link-web::before {

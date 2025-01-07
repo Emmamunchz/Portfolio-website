@@ -37,6 +37,8 @@ html {
 #menuButton,
 #menuButton2,
 .links,
+h1,
+h6,
 .site {
   transition: all 0.8s ease-in-out;
 }
